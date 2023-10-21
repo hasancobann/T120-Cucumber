@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="40.743" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="US1001 Kullanici amazon anasayfada arama yapar" name="TC02 Kullanici amazonda Java aratir" time="7.11">
+<system-out><![CDATA[
+Given kullanici amazonUrl anasayfaya gider..................................passed
+And arama kutusuna Java yazip aratir........................................passed
+Then arama sonuclarinin Java icerdigini test eder...........................passed
+And 2 saniye bekler.........................................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003 kullanici gecerli bilgilerle sayfaya giris yapar" name="TC05 qualitydemy pozitif login testi" time="5.292">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk login linkine tiklar...............................................passed
+And username kutusuna "qdGecerliEmail" yazar................................passed
+And password kutusuna "qdGecerliPassword" yazar.............................passed
+And login butonuna basar....................................................passed
+Then basarili giris yapildigini test eder...................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 Kullanici amazonda arama yapip, ilk urunu test eder." name="TC09 Ilk urun testi" time="8.704">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+And arama kutusuna "nutella" yazip aratir...................................passed
+Then ilk urunu tiklar.......................................................passed
+And urun isminin "Nutella" icerdigini test eder.............................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Kullanici herokuapp sayfasinda beklemeleri yapar" name="TC12 Kullanici bekleme islemlerini yapar" time="19.541">
+<system-out><![CDATA[
+Given kullanici "herokuappUrl" anasayfaya gider.............................passed
+When Add element butonuna basar.............................................passed
+And Delete butonu goronor oluncaya kadar bekler.............................passed
+Then Delete butonunun gorunur oldugunu test eder............................passed
+And Delete butonuna basarak butonu siler....................................passed
+And Delete butonunun gorunmedigini test eder................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
